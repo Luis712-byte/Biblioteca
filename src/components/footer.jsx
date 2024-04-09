@@ -8,7 +8,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer bg-danger text-white">
+    <footer className="footer bg-light text-dark">
       <div className="container">
         <div className="row">
           <div className="col-md-6">

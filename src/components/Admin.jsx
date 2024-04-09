@@ -12,7 +12,7 @@ const Admin = (props) => {
         if (auth.currentUser) {
             setUser(auth.currentUser);
             if (props.firebaseRol !== "Admin") {
-                navigate('/Reservas');
+                navigate('/');
             } else {
                 navigate('/admin');
             }
