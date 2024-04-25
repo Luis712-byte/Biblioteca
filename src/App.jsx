@@ -8,7 +8,6 @@ import Navbar from './components/Navbar';
 import Reservas from './components/Libros';
 import { auth, db } from './firebase';
 import MisReservas from './components/Pedidos';
-import Footer from './components/footer';
 
 function App() {
   const [firebaseUser, setFirebaseUser] = useState(false);
@@ -63,11 +62,8 @@ function App() {
           <Route path='admin' element={<Admin firebaseRol={firebaseRol} />} />
           <Route path='libros' element={<Reservas />} /> 
           <Route path='pedidos' element={<MisReservas />} />
-        </Routes>
-        
+        </Routes>    
       </div>
-      <br></br>
-      <Footer/>
     </Router>
     
   ) : (
